@@ -109,6 +109,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 32px;
     }
     
     ul.header--bottom__navbar {
@@ -139,7 +140,7 @@
     }
     
     a.header--bottom-logo {
-        width: 120px;
+        width: 160px;
     }
     
     img.header--bottom-logo__img {
@@ -316,19 +317,18 @@
     }
     
     .page1--container {
-        border: 1px solid #ccc;
-        border-radius: 4px;
         box-shadow: 0 0 8px #ccc;
+        max-width: 1026px !important;
     }
     
     .page1--container__row.row {
-        padding: 8px 24px;
+        /* padding: 8px 24px; */
     }
     
     h1.heading-page1 {
-        font-size: 26px;
+        font-size: 23px;
         color: #0055A4;
-        padding: 16px;
+        padding: 42px 42px 20px 42px;
         display: block;
         text-transform: uppercase;
     }
@@ -336,30 +336,33 @@
     h3.page1-heading-title {
         padding: 12px 0px;
         color: #6DCFF6;
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 600;
         text-transform: uppercase;
     }
     
     p.page1--item__text {
-        font-size: 16px;
+        font-size: 14px;
         color: #222;
         line-height: 1.6;
-        margin-bottom: 12px;
+        margin-bottom: 5px;
     }
     
     p.page1--container-right__item-p {
         width: 100%;
+        margin-top: -69px;
+        margin-left: -88px;
     }
     
     img.page1--container-right__img {
-        width: 486px;
-        height: auto;
+        width: 496px;
+        height: 420px;
         object-fit: cover;
     }
     
     p.btn-chitiet {
         padding: 12px 16px;
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 600;
         background: #0055A4;
         color: #fff;
@@ -481,7 +484,7 @@
     h1.heading-page7,
     h1.heading-page2 {
         text-align: center;
-        font-size: 28px;
+        font-size: 26px;
         color: #0056a2;
         text-transform: uppercase;
         margin-bottom: 32px;
@@ -682,7 +685,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -132px;
+        bottom: -78px;
     }
     
     .page3--item__text {
@@ -725,7 +728,7 @@
     }
     
     p.page3--phu-hover--p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         text-transform: capitalize;
         line-height: 1.6;
@@ -741,8 +744,7 @@
         background-repeat: no-repeat;
         position: relative;
     }
-    
-    section#page4::after {
+    /* section#page4::after {
         content: "";
         display: block;
         background: url(https://nhakhoaparis.vn/wp-content/themes/ParisBrand2021/Module_v2/Home/service_9_0_0/images/line.png) center 0 no-repeat;
@@ -754,6 +756,7 @@
         background-size: 100%;
         transform: translateX(-50%);
     }
+     */
     
     h1.heading-page4 {
         font-size: 26px;
@@ -767,7 +770,7 @@
     p.page4--item-top__text {
         display: flex;
         align-items: center;
-        font-size: 15px;
+        font-size: 18px;
         color: #fff;
         cursor: pointer;
         position: relative;
@@ -782,6 +785,8 @@
     .page4--container__row.row {
         margin-left: auto;
         margin-top: 24px;
+        margin-right: auto;
+        width: 1026px;
     }
     
     .dichvu-khachhang.active p.page4--item-top__text {
@@ -815,7 +820,7 @@
     
     p.page4--item-bottom__p {
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         color: #fff;
         text-transform: capitalize;
         line-height: 1.6;
@@ -825,8 +830,8 @@
     
     span.page4--item-bottom__p-span {
         display: block;
-        font-size: 16px;
-        font-weight: unset;
+        font-size: 15px;
+        font-weight: 500;
     }
     
     .anhkhachhang {
@@ -854,6 +859,12 @@
     
     .page5--container__row {
         margin-top: 32px;
+    }
+    
+    .page7--container.grid.wide,
+    .page6--container.grid.wide,
+    .page5--container.grid.wide {
+        max-width: 1140px !important;
     }
     
     .page5--container__item {
@@ -1156,7 +1167,7 @@
         position: absolute;
         left: 50%;
         top: 0;
-        width: 90%;
+        width: 86%;
         height: 50px;
         background-size: 100%;
         transform: translateX(-50%);
@@ -1432,7 +1443,7 @@
     }
     
     .page1--container-right__img-mobile {
-        display: none !important;
+        /* display: none !important; */
     }
     
     .dichVu--container__item {
@@ -1488,10 +1499,10 @@
             width: 100%;
             padding: 0 32px;
         }
-        .page1--container__row.chitiet {
+        /* .page1--container__row.chitiet {
             flex-flow: column-reverse;
-        }
-        .page1--container-right__img {
+        } */
+        .page1--container-right__img-mobile {
             display: none !important;
         }
         h1.heading-page1 {
@@ -1597,6 +1608,18 @@
         }
         .footer-container__item-bottom_khoi {
             padding: 0 16px;
+        }
+        .page1--container.grid.wide {
+            overflow: hidden;
+            max-width: 90% !important;
+            width: 90%;
+        }
+        img.page1--container-right__img {
+            width: 100% !important;
+            height: auto !important;
+        }
+        p.page1--container-right__item-p {
+            margin-left: unset;
         }
     }
     
@@ -2091,11 +2114,6 @@
         font-size: 16px;
     }
     
-    .margin-top--16px {
-        margin: 0 !important;
-        margin-top: 12px !important;
-    }
-    
     .dangkynhanh-color {
         background-color: #DD4A39 !important;
     }
@@ -2197,4 +2215,36 @@
         margin-top: 4px;
         text-transform: capitalize;
         color: rgb(214, 11, 11);
+    }
+    
+    input.form-input {
+        margin: unset;
+        margin-bottom: 4px !important;
+    }
+    
+    .form-group {
+        margin-bottom: 16px;
+    }
+    
+    .page2-container.wide.grid {
+        max-width: 1026px;
+        padding: 0 10px;
+    }
+    
+    .page1--container__item {
+        padding: 0 64px 10px 42px;
+    }
+    
+    .slick-list.draggable {
+        padding: 0 42px;
+    }
+    
+    .page3-container__row.row {
+        width: 70%;
+        margin: auto;
+    }
+    
+    .page4--container__row.anhkhachhang.active.row {
+        width: 1170px;
+        margin: auto;
     }
