@@ -1443,7 +1443,7 @@
     }
     
     .page1--container-right__img-mobile {
-        /* display: none !important; */
+        display: none !important;
     }
     
     .dichVu--container__item {
