@@ -172,14 +172,15 @@
         background: #fff;
         border: 1px solid #ccc;
         box-shadow: 2px 2px 4px #222;
-        min-width: 800px;
-        left: -96px;
+        min-width: 1052px;
+        left: -346px;
         padding: 16px;
         border-radius: 4px;
         transform: translateY(10px);
         opacity: 0;
         visibility: hidden;
         transition: all .25s ease-in;
+        /* transform: translateX(-50%); */
     }
     
     .header--bottom__navbar-li:hover .header--bottom-khoi-subnav {
@@ -318,7 +319,6 @@
     
     .page1--container {
         box-shadow: 0 0 8px #ccc;
-        max-width: 1026px !important;
     }
     
     .page1--container__row.row {
@@ -786,7 +786,6 @@
         margin-left: auto;
         margin-top: 24px;
         margin-right: auto;
-        width: 1026px;
     }
     
     .dichvu-khachhang.active p.page4--item-top__text {
@@ -859,12 +858,6 @@
     
     .page5--container__row {
         margin-top: 32px;
-    }
-    
-    .page7--container.grid.wide,
-    .page6--container.grid.wide,
-    .page5--container.grid.wide {
-        max-width: 1140px !important;
     }
     
     .page5--container__item {
@@ -1495,14 +1488,6 @@
             font-size: 15px;
         }
         .page1--container-right__img-mobile {
-            display: block !important;
-            width: 100%;
-            padding: 0 32px;
-        }
-        /* .page1--container__row.chitiet {
-            flex-flow: column-reverse;
-        } */
-        .page1--container-right__img-mobile {
             display: none !important;
         }
         h1.heading-page1 {
@@ -1808,7 +1793,7 @@
             margin: auto;
         }
         p.page2-item-bottom__p {
-            width: 120px;
+            width: 102px;
         }
         .page6--container.grid.wide {
             width: calc(100% - 32px);
@@ -1820,9 +1805,44 @@
         .page4-mobile.owl-carousel.owl-loaded.owl-drag {
             display: block !important;
         }
+        .page1--container-right__img-mobile {
+            display: block !important;
+            width: 100%;
+            padding: 0 32px;
+            margin-top: 52px;
+        }
+        .page1--container-right__img {
+            display: none !important;
+        }
+        .page1--container__row.chitiet {
+            flex-flow: column-reverse;
+        }
         p.page4--item-bottom {
             width: 90%;
             margin: auto;
+        }
+        p.page7--item__link--text,
+        p.page8--item__link--text-right-title,
+        p.page4--item-top__text,
+        p.page2-item-bottom__text {
+            font-size: 14px;
+        }
+        p.page7--item__link--text {
+            font-size: 14px;
+        }
+        p.page7--item__link--text-title {
+            font-size: 16px;
+        }
+        p.page7--item__link-right-text {
+            font-size: 14px;
+            color: #222;
+        }
+        .header--bottom__container.grid.wide {
+            max-width: unset;
+            width: unset;
+        }
+        p.page1--container-bottom__item_name span {
+            font-size: 14px;
         }
         p.page4--item-bottom__p {
             font-size: 16px;
@@ -2227,7 +2247,6 @@
     }
     
     .page2-container.wide.grid {
-        max-width: 1026px;
         padding: 0 10px;
     }
     
@@ -2245,6 +2264,5 @@
     }
     
     .page4--container__row.anhkhachhang.active.row {
-        width: 1170px;
         margin: auto;
     }
